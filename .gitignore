@@ -1,12 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-translator/node_modules
-translator/.pnp
+node_modules
+.pnp
 .pnp.js
 
 # testing
-translator/coverage
+coverage
 
 # production
 translator/build
