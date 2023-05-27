@@ -1,31 +1,41 @@
-import { useState } from "react";
 import InputField from "./InputField/InputField";
 import classes from "./InputFields.module.css"
-
+import { setInput, getTranslation } from "../../redux/translate-reducer";
+import { connect } from "react-redux";
 
 const InputFields = (props) => {
 
-    let [inputText, setInputText] = useState('');
-    let [outputText, setOutputText] = useState('');
 
-    function changeInput(event){
-        setInputText(event.target.value);
-        changeOutput(event.target.value);
-    }
-
-    function changeOutput(text){
-        setOutputText(text);
+    function changeInput(event) {
+        let text = event.target.value;
+        props.setInput(text);
+        props.getTranslation(text);
     }
 
     return (
         <div className={classes.wrapper}>
-            <InputField onChange={changeInput} value={inputText}/>
+            <InputField onChange={changeInput} value={props.inputText} 
+                        placeholder="Click here and enter text to translate " disabled={false}/>
             <div>
-            ----
+                ---
+                ---
             </div>
-            <InputField onChange={changeOutput} value={outputText}/>
+            <InputField value={props.outputText} placeholder="Translation"  disabled={true}/>
         </div>
     );
 }
 
-export default InputFields;
+
+let mapStateToProps = (state) => {
+
+    return {
+        inputText: state.translator.inputText,
+        outputText: state.translator.outputText
+    }
+}
+
+
+const TranslateContainer = connect(mapStateToProps, { setInput, getTranslation })(InputFields);
+
+export default TranslateContainer;
+

@@ -1,14 +1,14 @@
 import Header from "./components/Header/Header";
 import classes from "./App.css";
-import InputFields from "./components/InputFields/InputFields";
 import ThemeSwitcher from "./utils/ThemeSwitcher/ThemeSwitcher";
 import Footer from "./components/Footer/Footer";
+import TranslateContainer from "./components/InputFields/InputFields";
 
 function App() {
   return (
     <div className="wrapper">
     <Header />
-    <InputFields />
+    <TranslateContainer />
     <ThemeSwitcher />
     <Footer />
     </div>
