@@ -3,3 +3,14 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.logo{
+    color: var(--logo-font-color);
+    transition: var(--change-theme-duration);
+}
+
+.about_link{
+    color: var(--logo-font-color);
+    text-decoration: none;
+    transition: var(--change-theme-duration);
+}

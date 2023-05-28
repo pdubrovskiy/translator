@@ -1,3 +1,11 @@
 .wrapper{
     display: flex;
 }
+
+.container{
+    background: var(--translation-fields-background);
+}
+
+.language_header{
+    color: var(--language-header-font-color);
+}

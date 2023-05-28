@@ -14,13 +14,19 @@ const InputFields = (props) => {
 
     return (
         <div className={classes.wrapper}>
-            <InputField onChange={changeInput} value={props.inputText} 
-                        placeholder="Click here and enter text to translate " disabled={false}/>
+            <div className={classes.container}>
+            <h3 className={classes.language_header}>Russian</h3>
+                <InputField onChange={changeInput} value={props.inputText}
+                    placeholder="Click here and enter text to translate " disabled={false} />
+            </div>
             <div>
                 ---
                 ---
             </div>
-            <InputField value={props.outputText} placeholder="Translation"  disabled={true}/>
+            <div className={classes.container}>
+            <h3 className={classes.language_header}>English</h3>
+            <InputField value={props.outputText} placeholder="Translation" disabled={true} />
+            </div>
         </div>
     );
 }

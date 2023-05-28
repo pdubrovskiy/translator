@@ -1,0 +1,8 @@
+input{
+    width: 500px;
+    outline: none;
+    background-color: var(--translation-fields-background);
+    border: 0;
+    color: var(--color-text-main);
+    transition: color var(--change-theme-duration);
+}
