@@ -1,0 +1,27 @@
+.container{
+    background-color: var(--switcher-background);
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.theme{
+    color: var(--color-text-main);
+    border: 2px solid transparent;
+}
+
+[data-theme="dark"] .dark{
+    color: var(--logo-font-color);
+    border: 2px solid var(--switcher-outline);
+    background-color: var(--switcher-chosen-dark);
+    transition: var(--change-theme-duration);
+}
+
+[data-theme="light"] .light{
+    color: var(--logo-font-color);
+    border: 2px solid var(--switcher-outline);
+    background-color: var(--switcher-chosen-light);
+    transition: var(--change-theme-duration);
+}
