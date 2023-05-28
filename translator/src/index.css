@@ -13,10 +13,10 @@
 [data-theme="light"]{
   --language-header-font-color: #818181;
   --logo-font-color: #1F1F1F;
-  --color-text-main: #1b1b1b;
+  --color-text-main: #808080;
   --background: #FFFFFF;
   --switcher-background: #F2F2F2;
-  --switcher-outline: #EEEEEE;
+  --switcher-outline: #dedede;
   --translation-fields-background: #EEEEEE;
 }
 

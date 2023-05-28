@@ -2,4 +2,7 @@
   padding: 0 7%;
   height: 100vh;
   background: url(./assets/background-1.webp) no-repeat, url(./assets/background-2.webp) no-repeat right top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

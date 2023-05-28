@@ -1,8 +1,14 @@
-input{
-    width: 500px;
+input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    width: 100%;
     outline: none;
     background-color: var(--translation-fields-background);
     border: 0;
     color: var(--color-text-main);
     transition: color var(--change-theme-duration);
+    padding: 0 2px;
 }
