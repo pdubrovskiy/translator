@@ -1,4 +1,5 @@
 .footer_link{
     text-transform: uppercase;
     text-decoration: none;
+    color: var(--footer-font-color);
 }
