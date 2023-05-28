@@ -33,7 +33,7 @@ export const setInput = (text) => {
     return { type: SET_INPUT, data: text };
 }
 
-const setTranslation = (text) => {
+export const setTranslation = (text) => {
     return { type: SET_TRANSLATION, data: text };
 }
 

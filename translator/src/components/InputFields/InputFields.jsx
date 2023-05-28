@@ -1,6 +1,6 @@
 import InputField from "./InputField/InputField";
 import classes from "./InputFields.module.css"
-import { setInput, getTranslation } from "../../redux/translate-reducer";
+import { setInput, getTranslation, setTranslation} from "../../redux/translate-reducer";
 import { connect } from "react-redux";
 
 const InputFields = (props) => {
@@ -9,6 +9,7 @@ const InputFields = (props) => {
     function changeInput(event) {
         let text = event.target.value;
         props.setInput(text);
+        props.setTranslation('Loading...');
         props.getTranslation(text);
     }
 
@@ -25,7 +26,7 @@ const InputFields = (props) => {
             </div>
             <div className={classes.container}>
             <h3 className={classes.language_header}>English</h3>
-            <InputField value={props.outputText} placeholder="Translation" disabled={true} />
+            <InputField value={props.outputText} placeholder="Translation" disabled={true} className={classes.translation}/>
             </div>
         </div>
     );
@@ -41,7 +42,7 @@ let mapStateToProps = (state) => {
 }
 
 
-const TranslateContainer = connect(mapStateToProps, { setInput, getTranslation })(InputFields);
+const TranslateContainer = connect(mapStateToProps, { setInput, getTranslation, setTranslation})(InputFields);
 
 export default TranslateContainer;
 
