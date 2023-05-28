@@ -11,7 +11,7 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <ThemeProvider>
-        <App />
+        <App className="app"/>
       </ThemeProvider>
     </React.StrictMode>
   </Provider>
