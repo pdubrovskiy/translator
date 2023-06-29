@@ -10,6 +10,7 @@ coverage
 
 # production
 translator/build
+build
 
 # misc
 .DS_Store
