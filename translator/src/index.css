@@ -33,4 +33,5 @@
 body{
   background: var(--background);
   transition: var(--change-theme-duration);
+  height: 100vh;
 }
