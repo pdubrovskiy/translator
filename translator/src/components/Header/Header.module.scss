@@ -3,38 +3,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.logo {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 44px;
-    color: var(--logo-font-color);
-    transition: var(--change-theme-duration);
-    cursor: default;
-}
+    .logo {
+        font-family: var(--font-family-main);
+        font-style: var(--font-style);
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 44px;
+        color: var(--logo-font-color);
+        transition: var(--change-theme-duration);
+        cursor: default;
+    }
 
-.about_link {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: var(--logo-font-color);
-    text-decoration: none;
-    transition: var(--change-theme-duration);
-    display: flex;
-}
+    .about_link {
+        font-family: var(--font-family-sec);
+        font-style: var(--font-style);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: var(--logo-font-color);
+        text-decoration: none;
+        transition: var(--change-theme-duration);
+        display: flex;
 
-.icon{
-    width: 22px;
-    height: 20px;
-    margin-right: 2.5px;
-    background: url(../../assets/about.svg);
-}
+        .icon {
+            width: 22px;
+            height: 20px;
+            margin-right: 2.5px;
+            background: url(../../assets/about.svg);
 
-[data-theme="dark"] .icon{
-    background: url(../../assets/about-light.svg);
+            [data-theme="dark"] & {
+                background: url(../../assets/about-light.svg);
+            }
+        }
+    }
 }
