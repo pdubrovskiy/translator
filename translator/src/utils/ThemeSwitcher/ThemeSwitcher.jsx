@@ -1,5 +1,5 @@
 import { ThemeContext, themes } from "../../contexts/ThemeContext"
-import classes from "./ThemeSwitcher.module.css"
+import classes from "./ThemeSwitcher.module.scss"
 
 const ThemeSwitcher = (props) => {
     return (

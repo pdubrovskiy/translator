@@ -1,5 +1,5 @@
 import InputField from "./InputField/InputField";
-import classes from "./InputFields.module.css"
+import classes from "./InputFields.module.scss"
 import { setInput, getTranslation, setTranslation } from "../../redux/translate-reducer";
 import { connect } from "react-redux";
 

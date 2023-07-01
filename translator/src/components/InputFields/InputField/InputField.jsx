@@ -1,4 +1,4 @@
-import classes from "./InputField.module.css";
+import classes from "./InputField.module.scss";
 
 
 const InputField = (props) => {
