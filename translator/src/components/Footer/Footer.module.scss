@@ -1,15 +1,15 @@
-.footer_link {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--footer-font-color);
-}
-
 .footer{
     padding: 25px;
     align-self: center;
+
+    .footer_link {
+        font-family: var(--font-family-sec);
+        font-style: var(--font-style);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--footer-font-color);
+    }
 }
