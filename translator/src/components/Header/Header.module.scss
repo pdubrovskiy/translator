@@ -13,6 +13,14 @@ header {
         color: var(--logo-font-color);
         transition: var(--change-theme-duration);
         cursor: default;
+
+        @media screen and (max-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 20px;
+        }
     }
 
     .about_link {
@@ -25,6 +33,14 @@ header {
         text-decoration: none;
         transition: var(--change-theme-duration);
         display: flex;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 12px;
+        }
 
         .icon {
             width: 22px;
