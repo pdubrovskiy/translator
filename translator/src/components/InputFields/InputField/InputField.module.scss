@@ -11,4 +11,8 @@ input {
     color: var(--color-text-main);
     transition: color var(--change-theme-duration);
     padding: 0 2px;
+
+    @media screen and (max-width: 768px){
+        font-size: 14px;
+    }
 }
